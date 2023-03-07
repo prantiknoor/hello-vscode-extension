@@ -19,8 +19,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 16.x
-    - name: Install all packages npm
-      run: npm install
     - name: Publish
       # if: startsWith(github.ref, 'refs/tags/')
       run: npm run deploy
